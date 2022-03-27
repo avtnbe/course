@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Небесные тела | Видео</title>
+    <link rel="shortcut icon" type="image/x-icon" href="src/favicon.png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/links.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="header">
+            <div id="logo" onclick="window.open('./index.html', '_self')"></div>
+            <div id="menu">
+                <div id="menu-img" onclick="enabler()">
+                    <img id="m-img" src="src/menu-nav.png" alt="menu">
+                </div>
+            </div>
+            <ul id="navigation">
+                <li onclick="window.open('./index.html', '_self')"><div class="nav-icon"><img id="logo-home"
+                                                                                              onmouseenter="document.getElementById('logo-home').src = 'src/home-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-home').src = 'src/home-logo.png'"
+                                                                                              src="src/home-logo.png"></div><div class="menu-text">Главная</div></li>
+
+                <li onclick="window.open('./video.html', '_self')"><div class="nav-icon"><img id="logo-video"
+                                                                                              onmouseenter="document.getElementById('logo-video').src = 'src/video-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-video').src = 'src/video-logo.png'"
+                                                                                              src="src/video-logo.png"></div><div class="menu-text">Видео</div></li>
+
+                <li onclick="window.open('./gallery.html', '_self')"><div class="nav-icon"><img id="logo-gallery"
+                                                                                                onmouseenter="document.getElementById('logo-gallery').src = 'src/gallery-hover.png'"
+                                                                                                onmouseleave="document.getElementById('logo-gallery').src = 'src/gallery-logo.png'"
+                                                                                                src="src/gallery-logo.png" ></div><div class="menu-text">Галерея</div></li>
+
+                <li onclick="window.open('./links.html', '_self')"><div class="nav-icon"><img id="logo-article"
+                                                                                              onmouseenter="document.getElementById('logo-article').src = 'src/article-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-article').src = 'src/arcticle-logo.png'"
+                                                                                              src="src/arcticle-logo.png"></div><div class="menu-text">Статьи</div></li>
+
+                <li onclick="window.open('./contacts.html', '_self')"><div class="nav-icon"><img id="logo-contacts"
+                                                                                                 onmouseenter="document.getElementById('logo-contacts').src = 'src/contacts-hover.png'"
+                                                                                                 onmouseleave="document.getElementById('logo-contacts').src = 'src/contacts-logo.png'"
+                                                                                                 src="src/contacts-logo.png"></div><div class="menu-text">Контакты</div></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="main-container">
+        <div class="main">
+            <div class="main-photo-name" style="justify-content: space-around; width: auto">
+                <video src="video/video.mp4" controls preload="auto"></video>
+            </div>
+            <div class="main-text">
+                <div id="naming">Кометы и астероиды Солнечной системы / Сергей Назаров</div>
+                Как классифицируются космические тела? Из чего состоит Солнечная система? Чем могут быть полезны астероиды? Чем интересны Веста и Церера?
+                Об истории открытия и перспективах исследования межзвёздных тел в Солнечной системе рассказывает научный сотрудник Крымской астрофизической обсерватории, популяризатор астрономии Сергей Назаров.
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="footer-container" onclick="window.open('https://www.nasa.gov', '_blank')">
+        <div id="footer-text">
+            Хочешь узнать больше?<here> Ищи здесь...</here>
+        </div>
+    </div>
+</footer>
+
+<script src="script/script.js"></script>
+</body>
+</html>

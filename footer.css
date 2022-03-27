@@ -1,0 +1,16 @@
+#footer-container{
+    background: #9A83BA;
+    display: flex;
+    font-family: "Century Gothic", serif;
+    font-size: 22px;
+    color: black;
+    margin: auto;
+    letter-spacing: 2px;
+    padding: 3vw .9vw;
+    border-top: 2px solid black;
+    cursor: help;
+    justify-content: flex-start;
+}
+here{
+    color: white;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Небесные тела | Паллада</title>
+    <link rel="shortcut icon" type="image/x-icon" href="src/favicon.png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="header">
+            <div id="logo" onclick="window.open('./index.html', '_self')"></div>
+            <div id="menu">
+                <div id="menu-img" onclick="enabler()">
+                    <img id="m-img" src="src/menu-nav.png" alt="menu">
+                </div>
+            </div>
+            <ul id="navigation">
+                <li onclick="window.open('./index.html', '_self')"><div class="nav-icon"><img id="logo-home"
+                                                                                              onmouseenter="document.getElementById('logo-home').src = 'src/home-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-home').src = 'src/home-logo.png'"
+                                                                                              src="src/home-logo.png"></div><div class="menu-text">Главная</div></li>
+
+                <li onclick="window.open('./video.html', '_self')"><div class="nav-icon"><img id="logo-video"
+                                                                                              onmouseenter="document.getElementById('logo-video').src = 'src/video-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-video').src = 'src/video-logo.png'"
+                                                                                              src="src/video-logo.png"></div><div class="menu-text">Видео</div></li>
+
+                <li onclick="window.open('./gallery.html', '_self')"><div class="nav-icon"><img id="logo-gallery"
+                                                                                                onmouseenter="document.getElementById('logo-gallery').src = 'src/gallery-hover.png'"
+                                                                                                onmouseleave="document.getElementById('logo-gallery').src = 'src/gallery-logo.png'"
+                                                                                                src="src/gallery-logo.png" ></div><div class="menu-text">Галерея</div></li>
+
+                <li onclick="window.open('./links.html', '_self')"><div class="nav-icon"><img id="logo-article"
+                                                                                              onmouseenter="document.getElementById('logo-article').src = 'src/article-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-article').src = 'src/arcticle-logo.png'"
+                                                                                              src="src/arcticle-logo.png"></div><div class="menu-text">Статьи</div></li>
+
+                <li onclick="window.open('./contacts.html', '_self')"><div class="nav-icon"><img id="logo-contacts"
+                                                                                                 onmouseenter="document.getElementById('logo-contacts').src = 'src/contacts-hover.png'"
+                                                                                                 onmouseleave="document.getElementById('logo-contacts').src = 'src/contacts-logo.png'"
+                                                                                                 src="src/contacts-logo.png"></div><div class="menu-text">Контакты</div></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="main-container">
+        <div class="main left">
+            <div class="main-photo-name">
+                <div class="main-name" style="margin-bottom: 2vh">
+                    Паллада
+                </div>
+                <div class="main-photo">
+                    <img src="src/pallada-2.png" style="border: 2px solid #9A83BA;">
+                </div>
+            </div>
+            <div class="main-text" style="align-self: center; margin-top: 2vh">
+                Относится к главному поясу астероидов. Долгое время Паллада считалась вторым по размерам телом главного пояса астероидов — сначала её диаметр оценивался в 608 км, затем в 582 × 556 × 500 км (считалось, что превосходит Весту). В августе 2006 года Церера была переведена в статус карликовой планеты, и Паллада стала занимать первое место по размеру и второе место по массе (на 25 % легче Весты) среди астероидов главного кольца. Однако уточнённый размер Паллады (512 ± 6 км) оказался чуть меньше диаметра Весты (525,4 ± 0,2 км), и Паллада снова стала вторым по размерам телом главного пояса астероидов.
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="footer-container" onclick="window.open('https://www.nasa.gov', '_blank')">
+        <div id="footer-text">
+            Хочешь узнать больше?<here> Ищи здесь...</here>
+        </div>
+    </div>
+</footer>
+
+<script src="script/script.js"></script>
+</body>
+</html>

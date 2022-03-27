@@ -1,0 +1,124 @@
+body{
+    background: #08002d;
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #9A83BA;
+    margin: 0;
+    padding: 7px;
+    border-bottom: 3px solid black;
+}
+
+#logo{
+    background: url("../src/logo.png") no-repeat;
+    width: 80px;
+    height: 80px;
+    flex-basis: 80px;
+    align-self: center;
+    cursor: pointer;
+}
+#logo:hover{
+    background: url("../src/logo-hover.png");
+}
+
+#navigation{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-direction: row;
+    flex-basis: calc(100% - 80px);
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+.menu-text{
+    color: black;
+    text-transform: uppercase;
+    line-height: 23px;
+}
+
+#navigation li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+    min-width: 49px;
+    min-height: 49px;
+    font-family: "Century Gothic", serif;
+    font-size: 22px;
+    cursor: pointer;
+    border-right: 2px solid black;
+    padding: 0 30px;
+    width: 100px;
+}
+#navigation li:last-child{
+    border-right: none;
+}
+.nav-icon{
+    width: 49px;
+    height: 49px;
+}
+#menu{
+    display: none;
+    flex-basis: calc(100% - 80px);
+    justify-content: flex-end;
+}
+#menu-img{
+    width: 80px;
+    height: 80px;
+}
+@media (max-width: 950px) {
+    #navigation{
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 3vh;
+        padding-top: 3vh;
+        margin-top: 1vh;
+        border-top: 3px solid black;
+    }
+    #navigation li{
+        justify-content: space-between;
+        flex-direction: row;
+        column-gap: 3vw;
+        flex-basis: 100%;
+        width: auto;
+        border: 3px solid rgba(67,71,125,1);
+        border-radius: 10px;
+    }
+    #navigation li:last-child{
+        border: 3px solid rgba(67,71,125,1);
+    }
+    #navigation li:active{
+        background: rgba(67,71,125,1);
+        transition: background .8s;
+    }
+    .menu-text{
+        align-self: flex-end;
+        line-height: 40px;
+    }
+    #menu{
+        display: flex;
+    }
+    #m-img{
+        cursor: pointer;
+    }
+}
+@media (max-width: 260px) {
+    .menu-text{
+        display: none;
+    }
+    #navigation li{
+        justify-content: center;
+    }
+}

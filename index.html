@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Небесные тела | Главная</title>
+    <link rel="shortcut icon" type="image/x-icon" href="src/favicon.png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="header">
+            <div id="logo" onclick="window.open('./index.html', '_self')"></div>
+            <div id="menu">
+                <div id="menu-img" onclick="enabler()">
+                    <img id="m-img" src="src/menu-nav.png" alt="menu">
+                </div>
+            </div>
+            <ul id="navigation">
+                <li onclick="window.open('./index.html', '_self')"><div class="nav-icon"><img id="logo-home"
+                                                                                              onmouseenter="document.getElementById('logo-home').src = 'src/home-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-home').src = 'src/home-logo.png'"
+                                                                                              src="src/home-logo.png"></div><div class="menu-text">Главная</div></li>
+
+                <li onclick="window.open('./video.html', '_self')"><div class="nav-icon"><img id="logo-video"
+                                                                                              onmouseenter="document.getElementById('logo-video').src = 'src/video-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-video').src = 'src/video-logo.png'"
+                                                                                              src="src/video-logo.png"></div><div class="menu-text">Видео</div></li>
+
+                <li onclick="window.open('./gallery.html', '_self')"><div class="nav-icon"><img id="logo-gallery"
+                                                                                                onmouseenter="document.getElementById('logo-gallery').src = 'src/gallery-hover.png'"
+                                                                                                onmouseleave="document.getElementById('logo-gallery').src = 'src/gallery-logo.png'"
+                                                                                                src="src/gallery-logo.png" ></div><div class="menu-text">Галерея</div></li>
+
+                <li onclick="window.open('./links.html', '_self')"><div class="nav-icon"><img id="logo-article"
+                                                                                              onmouseenter="document.getElementById('logo-article').src = 'src/article-hover.png'"
+                                                                                              onmouseleave="document.getElementById('logo-article').src = 'src/arcticle-logo.png'"
+                                                                                              src="src/arcticle-logo.png"></div><div class="menu-text">Статьи</div></li>
+
+                <li onclick="window.open('./contacts.html', '_self')"><div class="nav-icon"><img id="logo-contacts"
+                                                                                                 onmouseenter="document.getElementById('logo-contacts').src = 'src/contacts-hover.png'"
+                                                                                                 onmouseleave="document.getElementById('logo-contacts').src = 'src/contacts-logo.png'"
+                                                                                                 src="src/contacts-logo.png"></div><div class="menu-text">Контакты</div></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="main-container">
+        <div class="main left">
+            <div class="main-photo-name">
+                <div class="main-name">
+                    Астероиды
+                </div>
+                <div class="main-photo">
+                    <img src="src/asteroid-main.png">
+                </div>
+            </div>
+            <div class="main-text">
+                Космические тела, которые уступают по размеру планетам, называют астероидами. Размеры астероидов — до нескольких десятков километров. Диаметр самого большого из них — Цереры — около 1 000 км. Некоторые учёные относят Цереру к малым планетам.
+
+                Астероиды имеют неправильную форму, у них нет атмосферы. У некоторых астероидов есть спутники. Место скопления астероидов в Солнечной системе назвали главным поясом астероидов. Он находится между орбитами планет Марс и Юпитер.
+            </div>
+        </div>
+
+        <div class="main right">
+            <div class="main-text">
+                Koмeты – нeбoльшиe нeбecныe тeлa, вpaщaющиecя вoкpуг Coлнцa. B пpoшлoм люди cмoтpeли нa пpибытиe кoмeт c ужacoм и бoязнью, тaк кaк cчитaли, чтo этo пpeдзнaмeнoвaниe cмepти, кaтacтpoф или бoжьeй кapы. Kитaйcкиe учeныe вeкaми coбиpaли дaнныe, oтcлeживaя пepиoдичнocть пpибытия oбъeктoв и иx тpaeктopию. Эти лeтoпиcи cтaли цeнными pecуpcaми для coвpeмeнныx acтpoнoмoв. Пpoлeт кoмeты Maкнoт нaд вoдaми Tиxoгo Oкeaнa Ceгoдня мы знaeм, чтo кoмeты выcтупaют ocтaтoчным мaтepиaлoм и мaлыми тeлaми oт фopмиpoвaния Coлнeчнoй cиcтeмы 4.6 млpд. лeт нaзaд. Oни пpeдcтaвлeны льдoм, нa кoтopoм нaxoдитcя тeмнaя кopoчкa opгaничecкoгo мaтepиaлa.
+            </div>
+            <div class="main-photo-name">
+                <div class="main-name">
+                    Кометы
+                </div>
+                <div class="main-photo">
+                    <img src="src/comet-main.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer>
+    <div id="footer-container" onclick="window.open('https://www.nasa.gov', '_blank')">
+        <div id="footer-text">
+            Хочешь узнать больше?<here> Ищи здесь...</here>
+        </div>
+    </div>
+</footer>
+
+<script src="script/script.js"></script>
+</body>
+</html>

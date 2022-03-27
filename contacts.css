@@ -1,0 +1,19 @@
+#contacts{
+    list-style: none;
+    line-height: 7.3vh;
+    align-self: center;
+    font-size: calc(10px + 2vw);
+}
+#contacts li:before{
+    content: "\02D8";
+}
+.main-text{
+    /*margin: 0;*/
+}
+.main a{
+    text-decoration: none;
+    color: #9A83BA;
+}
+.main-photo-name{
+    width: 47vw;
+}

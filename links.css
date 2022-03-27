@@ -1,0 +1,50 @@
+#main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 3.8vw 0;
+}
+.main{
+    margin: 3vw 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 2vh;
+}
+.main-photo-name{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.main-photo-name img, .main-photo-name video{
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    border: 2px solid #9A83BA;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-around;
+    font-family: "Century Gothic", serif;
+    font-size: calc(15px + 1vw);
+    color: #9A83BA;
+    margin: 0;
+    letter-spacing: 7px;
+    padding: 0 .9vw;
+    text-align: center;
+}
+.main a{
+    text-decoration: none;
+    color:#9A83BA;
+    text-align: center;
+}
+.main a:hover{
+    color: white;
+}
+#naming{
+    font-size: calc(15px + 2vw);
+    text-align: center;
+    margin-bottom: 2vh;
+}
